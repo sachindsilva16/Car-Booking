@@ -1,6 +1,7 @@
 #include "login.h"
 #include "ui_login.h"
 #include "QDebug"
+#include "QMessageBox"
 
 login::login(QWidget *parent)
     : QMainWindow(parent)
@@ -32,11 +33,24 @@ void login::on_loginButton_clicked()
 
         if(password == "admin123"){
             qDebug() << "Login Successfull";
+
+//            we need to call "mainmenu"
+
+            mainMenuUi.show();
+
+//            Now we need to close the login form, soon after the authentication.
+            login::close();
+
         } else {
-            qDebug() << "Invalid credientials...!!";
+//            qDebug() << "Invalid cred ientials...!!";
+            QMessageBox::information(0,"Authentication","Incorrect Password");
         }
 
     }
+    else {
+        //qDebug() << "Invalid cred ientials...!!";
+            QMessageBox::information(0,"login error","Incorrect username");
+         }
 }
 
 

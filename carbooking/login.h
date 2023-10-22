@@ -2,6 +2,7 @@
 #define LOGIN_H
 
 #include <QMainWindow>
+#include "mainmenu.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class login; }
@@ -22,5 +23,6 @@ private slots:
 
 private:
     Ui::login *ui;
+    MainMenu mainMenuUi;
 };
 #endif // LOGIN_H
