@@ -2,6 +2,8 @@
 #define MAINMENU_H
 
 #include <QDialog>
+#include "addcar.h"
+#include "bookcar.h"
 
 namespace Ui {
 class MainMenu;
@@ -20,8 +22,14 @@ private slots:
 
     void on_exitButton_clicked();
 
+    void on_addCarButton_clicked();
+
+    void on_bookCarButton_clicked();
+
 private:
     Ui::MainMenu *ui;
+    addCar addCarUi;
+    bookCar bookCarUi;
 };
 
 #endif // MAINMENU_H

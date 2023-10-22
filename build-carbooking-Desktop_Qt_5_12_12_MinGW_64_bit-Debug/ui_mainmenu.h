@@ -21,10 +21,10 @@ class Ui_MainMenu
 {
 public:
     QLabel *label;
-    QLabel *mainMenuTitle;
     QPushButton *addCarButton;
     QPushButton *bookCarButton;
     QPushButton *exitButton;
+    QLabel *addCarLabel;
 
     void setupUi(QDialog *MainMenu)
     {
@@ -33,27 +33,16 @@ public:
         MainMenu->resize(483, 295);
         label = new QLabel(MainMenu);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(-210, 0, 911, 381));
+        label->setGeometry(QRect(-230, 0, 911, 381));
         label->setPixmap(QPixmap(QString::fromUtf8("../car-bg.png")));
-        mainMenuTitle = new QLabel(MainMenu);
-        mainMenuTitle->setObjectName(QString::fromUtf8("mainMenuTitle"));
-        mainMenuTitle->setGeometry(QRect(130, 0, 211, 71));
-        QFont font;
-        font.setFamily(QString::fromUtf8("MonoLisa Trial"));
-        font.setPointSize(20);
-        font.setBold(true);
-        font.setWeight(75);
-        mainMenuTitle->setFont(font);
-        mainMenuTitle->setStyleSheet(QString::fromUtf8("color:black;\n"
-"font-weight:bold;"));
         addCarButton = new QPushButton(MainMenu);
         addCarButton->setObjectName(QString::fromUtf8("addCarButton"));
-        addCarButton->setGeometry(QRect(320, 100, 111, 31));
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("Monolisa Trial"));
-        font1.setBold(true);
-        font1.setWeight(75);
-        addCarButton->setFont(font1);
+        addCarButton->setGeometry(QRect(300, 100, 111, 31));
+        QFont font;
+        font.setFamily(QString::fromUtf8("Monolisa Trial"));
+        font.setBold(true);
+        font.setWeight(75);
+        addCarButton->setFont(font);
         addCarButton->setStyleSheet(QString::fromUtf8("font-size:14px;\n"
 "font-weight:bold;\n"
 "border-radius:10px;\n"
@@ -62,10 +51,10 @@ public:
 "font-family:\"Monolisa Trial\";"));
         bookCarButton = new QPushButton(MainMenu);
         bookCarButton->setObjectName(QString::fromUtf8("bookCarButton"));
-        bookCarButton->setGeometry(QRect(320, 150, 111, 31));
-        QFont font2;
-        font2.setFamily(QString::fromUtf8("Monolisa Trial"));
-        bookCarButton->setFont(font2);
+        bookCarButton->setGeometry(QRect(300, 150, 111, 31));
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("Monolisa Trial"));
+        bookCarButton->setFont(font1);
         bookCarButton->setStyleSheet(QString::fromUtf8("font-size:14px;\n"
 "font-weight:medium;\n"
 "border-radius:10px;\n"
@@ -74,14 +63,25 @@ public:
 "font-family:\"Monolisa Trial\";"));
         exitButton = new QPushButton(MainMenu);
         exitButton->setObjectName(QString::fromUtf8("exitButton"));
-        exitButton->setGeometry(QRect(230, 250, 81, 31));
-        exitButton->setFont(font2);
+        exitButton->setGeometry(QRect(210, 250, 81, 31));
+        exitButton->setFont(font1);
         exitButton->setStyleSheet(QString::fromUtf8("font-size:14px;\n"
 "font-weight:medium;\n"
 "border-radius:10px;\n"
 "background-color:white;\n"
 "color:black;\n"
 "font-family:\"Monolisa Trial\";"));
+        addCarLabel = new QLabel(MainMenu);
+        addCarLabel->setObjectName(QString::fromUtf8("addCarLabel"));
+        addCarLabel->setGeometry(QRect(140, 10, 211, 71));
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("MonoLisa Trial"));
+        font2.setPointSize(20);
+        font2.setBold(true);
+        font2.setWeight(75);
+        addCarLabel->setFont(font2);
+        addCarLabel->setStyleSheet(QString::fromUtf8("color:black;\n"
+"font-weight:bold;"));
 
         retranslateUi(MainMenu);
 
@@ -92,10 +92,10 @@ public:
     {
         MainMenu->setWindowTitle(QApplication::translate("MainMenu", "Dialog", nullptr));
         label->setText(QString());
-        mainMenuTitle->setText(QApplication::translate("MainMenu", "Main Menu", nullptr));
         addCarButton->setText(QApplication::translate("MainMenu", "Add Car", nullptr));
         bookCarButton->setText(QApplication::translate("MainMenu", "Book Car", nullptr));
         exitButton->setText(QApplication::translate("MainMenu", "Exit", nullptr));
+        addCarLabel->setText(QApplication::translate("MainMenu", "Car Menu", nullptr));
     } // retranslateUi
 
 };

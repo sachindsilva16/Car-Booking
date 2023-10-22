@@ -20,3 +20,15 @@ void MainMenu::on_exitButton_clicked()
     MainMenu::close();
 }
 
+
+void MainMenu::on_addCarButton_clicked()
+{
+    addCarUi.show();
+}
+
+
+void MainMenu::on_bookCarButton_clicked()
+{
+    bookCarUi.show();
+}
+

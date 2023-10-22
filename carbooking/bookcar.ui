@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainMenu</class>
- <widget class="QDialog" name="MainMenu">
+ <class>bookCar</class>
+ <widget class="QDialog" name="bookCar">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>483</width>
-    <height>295</height>
+    <width>535</width>
+    <height>373</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>-230</x>
+     <x>-240</x>
      <y>0</y>
      <width>911</width>
      <height>381</height>
@@ -29,12 +29,37 @@
     <pixmap>../car-bg.png</pixmap>
    </property>
   </widget>
-  <widget class="QPushButton" name="addCarButton">
+  <widget class="QLabel" name="bookCarTitle">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>100</y>
-     <width>111</width>
+     <x>170</x>
+     <y>20</y>
+     <width>211</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MonoLisa Trial</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:orange;
+font-weight:bold;</string>
+   </property>
+   <property name="text">
+    <string>Book Car</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bookNowButton">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>120</y>
+     <width>101</width>
      <height>31</height>
     </rect>
    </property>
@@ -55,42 +80,15 @@ color:white;
 font-family:&quot;Monolisa Trial&quot;;</string>
    </property>
    <property name="text">
-    <string>Add Car</string>
+    <string>Book Now</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="bookCarButton">
+  <widget class="QPushButton" name="bookCarExitButton">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>150</y>
-     <width>111</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Monolisa Trial</family>
-     <pointsize>-1</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font-size:14px;
-font-weight:medium;
-border-radius:10px;
-background-color:orange;
-color:black;
-font-family:&quot;Monolisa Trial&quot;;</string>
-   </property>
-   <property name="text">
-    <string>Book Car</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="exitButton">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>250</y>
-     <width>81</width>
+     <x>370</x>
+     <y>170</y>
+     <width>101</width>
      <height>31</height>
     </rect>
    </property>
@@ -110,31 +108,6 @@ font-family:&quot;Monolisa Trial&quot;;</string>
    </property>
    <property name="text">
     <string>Exit</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="addCarLabel">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>10</y>
-     <width>211</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>MonoLisa Trial</family>
-     <pointsize>20</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:black;
-font-weight:bold;</string>
-   </property>
-   <property name="text">
-    <string>Car Menu</string>
    </property>
   </widget>
  </widget>
