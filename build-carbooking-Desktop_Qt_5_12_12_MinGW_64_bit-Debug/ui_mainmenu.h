@@ -74,7 +74,7 @@ public:
 "font-family:\"Monolisa Trial\";"));
         exitButton = new QPushButton(MainMenu);
         exitButton->setObjectName(QString::fromUtf8("exitButton"));
-        exitButton->setGeometry(QRect(240, 250, 71, 31));
+        exitButton->setGeometry(QRect(230, 250, 81, 31));
         exitButton->setFont(font2);
         exitButton->setStyleSheet(QString::fromUtf8("font-size:14px;\n"
 "font-weight:medium;\n"

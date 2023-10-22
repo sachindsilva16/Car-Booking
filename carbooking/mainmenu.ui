@@ -113,9 +113,9 @@ font-family:&quot;Monolisa Trial&quot;;</string>
   <widget class="QPushButton" name="exitButton">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>230</x>
      <y>250</y>
-     <width>71</width>
+     <width>81</width>
      <height>31</height>
     </rect>
    </property>

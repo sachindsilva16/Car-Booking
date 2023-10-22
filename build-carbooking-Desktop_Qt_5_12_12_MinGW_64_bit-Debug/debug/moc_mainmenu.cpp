@@ -72,7 +72,7 @@ void MainMenu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         auto *_t = static_cast<MainMenu *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_bookCarButton_2_clicked(); break;
+
         case 1: _t->on_exitButton_clicked(); break;
         default: ;
         }

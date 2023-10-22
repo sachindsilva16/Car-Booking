@@ -15,7 +15,6 @@ MainMenu::~MainMenu()
 
 
 
-
 void MainMenu::on_exitButton_clicked()
 {
     MainMenu::close();
