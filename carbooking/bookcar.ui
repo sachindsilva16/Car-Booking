@@ -32,8 +32,8 @@
   <widget class="QLabel" name="bookCarTitle">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>20</y>
+     <x>180</x>
+     <y>0</y>
      <width>211</width>
      <height>71</height>
     </rect>
@@ -47,18 +47,18 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color:orange;
-font-weight:bold;</string>
+    <string notr="true">color:black;
+</string>
    </property>
    <property name="text">
     <string>Book Car</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="bookNowButton">
+  <widget class="QPushButton" name="bookCarButton">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>120</y>
+     <x>50</x>
+     <y>250</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -80,14 +80,14 @@ color:white;
 font-family:&quot;Monolisa Trial&quot;;</string>
    </property>
    <property name="text">
-    <string>Book Now</string>
+    <string>Book Car</string>
    </property>
   </widget>
   <widget class="QPushButton" name="bookCarExitButton">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>170</y>
+     <x>50</x>
+     <y>300</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -108,6 +108,288 @@ font-family:&quot;Monolisa Trial&quot;;</string>
    </property>
    <property name="text">
     <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nameLabel">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>70</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MonoLisa Trial</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;
+font-weight:bold;</string>
+   </property>
+   <property name="text">
+    <string>Name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>70</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MonoLisa Trial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+border-radius:10px;
+border:2px solid white;
+color:white;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ageLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>110</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MonoLisa Trial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+border-radius:10px;
+border:2px solid white;
+color:white;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ageLabel">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>110</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MonoLisa Trial</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;
+font-weight:bold;</string>
+   </property>
+   <property name="text">
+    <string>Age</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="maleRadioButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>150</y>
+     <width>84</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family:&quot;MonoLisa Trial&quot;;
+font-size:14px;
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>Male</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="femaleRadioButton">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>150</y>
+     <width>111</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family:&quot;MonoLisa Trial&quot;;
+font-size:14px;
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>Female</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pickupLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>180</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MonoLisa Trial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+border-radius:10px;
+border:2px solid white;
+color:white;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pickupLabel">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>180</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MonoLisa Trial</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;
+font-weight:bold;</string>
+   </property>
+   <property name="text">
+    <string>Pickup point</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="destinationLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>220</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MonoLisa Trial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+border-radius:10px;
+border:2px solid white;
+color:white;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="destinationLabel">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>220</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MonoLisa Trial</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;
+font-weight:bold;</string>
+   </property>
+   <property name="text">
+    <string>Destination</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="selectCarLabel">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>260</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MonoLisa Trial</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;
+font-weight:bold;</string>
+   </property>
+   <property name="text">
+    <string>Select car</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="selectedCarListWidget">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>260</y>
+     <width>161</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+border-radius:10px;
+border:2px solid white;
+color:white;
+</string>
    </property>
   </widget>
  </widget>

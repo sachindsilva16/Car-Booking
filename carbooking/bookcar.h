@@ -18,6 +18,8 @@ public:
 private slots:
     void on_bookCarExitButton_clicked();
 
+    void on_bookCarButton_clicked();
+
 private:
     Ui::bookCar *ui;
 };

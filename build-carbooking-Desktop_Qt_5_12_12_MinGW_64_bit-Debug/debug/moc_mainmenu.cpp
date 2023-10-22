@@ -79,7 +79,6 @@ void MainMenu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         auto *_t = static_cast<MainMenu *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-
         case 1: _t->on_exitButton_clicked(); break;
         case 2: _t->on_addCarButton_clicked(); break;
         case 3: _t->on_bookCarButton_clicked(); break;
