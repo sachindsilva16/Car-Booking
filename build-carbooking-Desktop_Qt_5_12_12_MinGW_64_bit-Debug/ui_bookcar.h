@@ -178,7 +178,8 @@ public:
         selectedCarListWidget->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:green;\n"
+"color:yellowgreen;\n"
+"font-size:16px;\n"
 ""));
 
         retranslateUi(bookCar);

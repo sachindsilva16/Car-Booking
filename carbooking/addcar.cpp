@@ -5,6 +5,7 @@
 #include  "qdebug.h"
 #include "QIODevice"
 #include "QVector"
+#include "QMessageBox"
 
 addCar::addCar(QWidget *parent) :
     QDialog(parent),
@@ -30,35 +31,51 @@ void addCar::on_addCarButtonInAddCar_clicked()
     // Using queue vector to store the entered data
     QVector<QString> carData;
 
-    carData.append(ui->carNoLineEdit->text());
-    carData.append(ui->brandLineEdit->text());
-    carData.append(ui->fareLineEdit->text());
+    if(ui->carNoLineEdit->text()==""||ui->brandLineEdit->text()==""||ui->fareLineEdit->text()==""){
+        QMessageBox::information(0,"Warning!","Please fill up all details");
+    } else {
+        carData.append(ui->carNoLineEdit->text());
+        carData.append(ui->brandLineEdit->text());
+        carData.append(ui->fareLineEdit->text());
 
-//    Creating pointer for listwidget type
-    QListWidgetItem *selectedCarType = ui->carTypeWidgetList->currentItem();
+    //    Creating pointer for listwidget type
+        QListWidgetItem *selectedCarType = ui->carTypeWidgetList->currentItem();
 
-    carData.append(selectedCarType->text());
+        carData.append(selectedCarType->text());
 
-// Store a car data in a file, using file handling
+    // Store a car data in a file, using file handling
 
-    QFile file("carData.txt");
+        QFile file("carData.txt");
 
-    if(file.open(QIODevice::Append | QIODevice::Text)){
+        if(file.open(QIODevice::Append | QIODevice::Text)){
 
-        QTextStream stream(&file);
-        // Create source and destination source stream so that I can store it in "carData.txt" file.
-        for(int i=0;i<carData.size();i++){
+            QTextStream stream(&file);
+            // Create source and destination source stream so that I can store it in "carData.txt" file.
+            for(int i=0;i<carData.size();i++){
 
-            stream << carData[i]<<" "; //
-            // Pass all the data
+                stream << carData[i]<<" "; //
+                // Pass all the data
+            }
+
+            stream << "\n";
         }
 
-        stream << "\n";
+        file.close();
+
+        QMessageBox::information(0,"Success","Your car has been added successfully");
+
+        qDebug() << "Data has been written into file successfully";
+
+        addCar::close();
     }
 
-    file.close();
 
-    qDebug() << "Data has been written into file successfully";
 
+}
+
+
+void addCar::on_exitAddCarButton_clicked()
+{
+    addCar::close();
 }
 

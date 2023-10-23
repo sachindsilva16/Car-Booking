@@ -31,7 +31,7 @@ void login::on_loginButton_clicked()
 
     if(userId == "admin"){ // currently, we will be hard coding for the testing purpose.
 
-        if(password == "admin123"){
+        if(password == "123"){
             qDebug() << "Login Successfull";
 
 //            we need to call "mainmenu"

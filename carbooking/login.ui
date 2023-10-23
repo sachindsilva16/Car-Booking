@@ -206,7 +206,7 @@ font-family:&quot;Monolisa Trial&quot;;</string>
      <string notr="true">background-color:transparent;
 border-radius:10px;
 border:2px solid white;
-color:green;</string>
+color:white;</string>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::Password</enum>

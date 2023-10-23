@@ -1,2 +1,0 @@
-101 bmw 200 Sedan 
-101 bmw 200 Premium 

@@ -116,7 +116,7 @@ public:
         passwordLineEdit->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:green;"));
+"color:white;"));
         passwordLineEdit->setEchoMode(QLineEdit::Password);
         login->setCentralWidget(centralwidget);
 
