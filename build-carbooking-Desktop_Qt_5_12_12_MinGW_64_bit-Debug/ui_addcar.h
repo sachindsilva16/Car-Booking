@@ -111,7 +111,7 @@ public:
         brandLineEdit->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:white;"));
+"color:black;"));
         brandLineEdit->setEchoMode(QLineEdit::Normal);
         carNoLineEdit = new QLineEdit(addCar);
         carNoLineEdit->setObjectName(QString::fromUtf8("carNoLineEdit"));
@@ -120,7 +120,7 @@ public:
         carNoLineEdit->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:white;\n"
+"color:black;\n"
 ""));
         addCarButtonInAddCar = new QPushButton(addCar);
         addCarButtonInAddCar->setObjectName(QString::fromUtf8("addCarButtonInAddCar"));
@@ -174,7 +174,7 @@ public:
         carTypeWidgetList->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:white;"));
+"color:black;"));
         fareLabel = new QLabel(addCar);
         fareLabel->setObjectName(QString::fromUtf8("fareLabel"));
         fareLabel->setGeometry(QRect(230, 230, 91, 31));
@@ -188,7 +188,7 @@ public:
         fareLineEdit->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:white;"));
+"color:green;"));
         fareLineEdit->setEchoMode(QLineEdit::Normal);
 
         retranslateUi(addCar);

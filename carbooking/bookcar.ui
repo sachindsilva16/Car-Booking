@@ -154,7 +154,7 @@ font-weight:bold;</string>
     <string notr="true">background-color:transparent;
 border-radius:10px;
 border:2px solid white;
-color:white;
+color:black;
 </string>
    </property>
    <property name="text">
@@ -180,7 +180,7 @@ color:white;
     <string notr="true">background-color:transparent;
 border-radius:10px;
 border:2px solid white;
-color:white;
+color:black;
 </string>
    </property>
    <property name="text">
@@ -267,7 +267,7 @@ color:black;</string>
     <string notr="true">background-color:transparent;
 border-radius:10px;
 border:2px solid white;
-color:white;
+color:black;
 </string>
    </property>
    <property name="text">
@@ -318,7 +318,7 @@ font-weight:bold;</string>
     <string notr="true">background-color:transparent;
 border-radius:10px;
 border:2px solid white;
-color:white;
+color:black;
 </string>
    </property>
    <property name="text">
@@ -388,7 +388,7 @@ font-weight:bold;</string>
     <string notr="true">background-color:transparent;
 border-radius:10px;
 border:2px solid white;
-color:white;
+color:green;
 </string>
    </property>
   </widget>

@@ -181,7 +181,7 @@ font-weight:bold;</string>
     <string notr="true">background-color:transparent;
 border-radius:10px;
 border:2px solid white;
-color:white;</string>
+color:black;</string>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::Normal</enum>
@@ -206,7 +206,7 @@ color:white;</string>
     <string notr="true">background-color:transparent;
 border-radius:10px;
 border:2px solid white;
-color:white;
+color:black;
 </string>
    </property>
    <property name="text">
@@ -362,7 +362,7 @@ font-weight:bold;</string>
     <string notr="true">background-color:transparent;
 border-radius:10px;
 border:2px solid white;
-color:white;</string>
+color:black;</string>
    </property>
   </widget>
   <widget class="QLabel" name="fareLabel">
@@ -409,7 +409,7 @@ font-weight:bold;</string>
     <string notr="true">background-color:transparent;
 border-radius:10px;
 border:2px solid white;
-color:white;</string>
+color:green;</string>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::Normal</enum>

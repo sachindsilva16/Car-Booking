@@ -3,7 +3,8 @@
 #include "qfile.h"
 #include "qtextstream.h"
 #include  "qdebug.h"
-#include "qiodevice.h"
+#include "QIODevice"
+#include "QVector"
 
 addCar::addCar(QWidget *parent) :
     QDialog(parent),

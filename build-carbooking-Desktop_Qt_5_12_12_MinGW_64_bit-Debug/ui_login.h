@@ -95,7 +95,7 @@ public:
         userIdLineEdit->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:white;\n"
+"color:green;\n"
 ""));
         exitButton = new QPushButton(centralwidget);
         exitButton->setObjectName(QString::fromUtf8("exitButton"));
@@ -116,7 +116,7 @@ public:
         passwordLineEdit->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:white;"));
+"color:green;"));
         passwordLineEdit->setEchoMode(QLineEdit::Password);
         login->setCentralWidget(centralwidget);
 

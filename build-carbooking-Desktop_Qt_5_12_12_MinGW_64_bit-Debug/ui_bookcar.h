@@ -107,7 +107,7 @@ public:
         nameLineEdit->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:white;\n"
+"color:black;\n"
 ""));
         ageLineEdit = new QLineEdit(bookCar);
         ageLineEdit->setObjectName(QString::fromUtf8("ageLineEdit"));
@@ -116,7 +116,7 @@ public:
         ageLineEdit->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:white;\n"
+"color:black;\n"
 ""));
         ageLabel = new QLabel(bookCar);
         ageLabel->setObjectName(QString::fromUtf8("ageLabel"));
@@ -143,7 +143,7 @@ public:
         pickupLineEdit->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:white;\n"
+"color:black;\n"
 ""));
         pickupLabel = new QLabel(bookCar);
         pickupLabel->setObjectName(QString::fromUtf8("pickupLabel"));
@@ -158,7 +158,7 @@ public:
         destinationLineEdit->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:white;\n"
+"color:black;\n"
 ""));
         destinationLabel = new QLabel(bookCar);
         destinationLabel->setObjectName(QString::fromUtf8("destinationLabel"));
@@ -178,7 +178,7 @@ public:
         selectedCarListWidget->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
 "border-radius:10px;\n"
 "border:2px solid white;\n"
-"color:white;\n"
+"color:green;\n"
 ""));
 
         retranslateUi(bookCar);
