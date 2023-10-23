@@ -1,2 +1,2 @@
 sachin 22 Tokyo Nagano male 101 Suzuki 200 Mini  
--->sachin || 22 || Nagano || Tokyo || male || 101 Suzuki 200 Mini  || -->
+-->sachin || 22 || Nagano || Tokyo || male || 101 Suzuki 200 Mini  || -->sachin || 22 || Matsumoto Castle || Nagano station || male || 101 Suzuki 200 Mini  || -->

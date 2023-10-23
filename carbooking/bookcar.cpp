@@ -90,7 +90,7 @@ void bookCar::on_bookCarButton_clicked()
                 // Pass all the data
             }
 
-            stream << "-->";
+            stream << "\n\n";
         }
 
         file.close();
