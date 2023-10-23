@@ -29,7 +29,7 @@ If you wish to clone the repository, rather than generate from it, you simply ne
 to run:
 
 ```bash
-git clone https://github.com/filipdutescu/modern-cpp-template/
+git clone https://github.com/sachindsilva16/Car-Booking.git
 ```
 
 After finishing getting a copy of the project, with any of the methods above, create
