@@ -86,11 +86,11 @@ void bookCar::on_bookCarButton_clicked()
             // Create source and destination source stream so that I can store it in "carData.txt" file.
             for(int i=0;i<bookedCarDetails.size();i++){
 
-                stream << bookedCarDetails[i]<<" "; //
+                stream << bookedCarDetails[i]<<" || "; //
                 // Pass all the data
             }
 
-            stream << "\n\n";
+            stream << "-->";
         }
 
         file.close();
@@ -129,13 +129,12 @@ void bookCar::on_bookCarButton_clicked()
                 // Pass all the data
             }
 
-            stream<<"-->";
         }
 
         file1.close();
         QMessageBox::information(0,"Booking Status","Car is successfully booked");
 
-
+        bookCar::close();
     }
 
 
