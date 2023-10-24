@@ -1,1 +1,3 @@
-101 Suzuki 200 Mini 
+102 Suzuki 300 Sedan 
+102 Suzuki 300 Sedan 
+102 Suzuki 300 Mini 
